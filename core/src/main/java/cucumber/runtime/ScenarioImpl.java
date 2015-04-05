@@ -33,6 +33,10 @@ public class ScenarioImpl implements Scenario {
     }
 
     @Override
+    public Collection<Result> getResults() {
+        return stepResults;
+    }
+    @Override
     public Collection<String> getSourceTagNames() {
         Set<String> result = new HashSet<String>();
         for (Tag tag : tags) {

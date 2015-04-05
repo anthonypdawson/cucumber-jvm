@@ -1,5 +1,6 @@
 package cucumber.api;
 
+import gherkin.formatter.model.Result;
 import java.util.Collection;
 
 /**
@@ -56,4 +57,9 @@ public interface Scenario {
      * @return the id of the Scenario.
      */
     String getId();
+
+    /**
+     * @return results on the Scenario
+     */
+    Collection<Result> getResults();
 }
